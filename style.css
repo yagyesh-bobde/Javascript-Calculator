@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&display=swap');
+
+body{
+          background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+          font-family: 'Crimson Text', serif !important;
+}
+
+.calculator{
+background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+
+input[type=text]{
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px !important;
+    transition: 356ms;
+}
+input[type=text]:active{
+    border: none;
+    transform: scale(1.2);
+}
+
+input[type=button]{
+    width: 100%;
+    padding: 7px;
+    border-radius: 10px;
+    border: none;
+    transition: 256ms;
+    font-weight: 600;
+    font-family: 'Crimson Text', serif !important;
+    font-size: larger;
+}
+
+input[type=button]:hover{
+    transform: scale(1.1);
+}
+
+input[type=button]:active {
+    background-color: slategrey ;
+}
+
+.active { 
+    border: 3px solid green !important;
+}
+
+.operators {
+    background-color: #9395a5;
+}

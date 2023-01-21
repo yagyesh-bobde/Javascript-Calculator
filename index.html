@@ -1,0 +1,90 @@
+<html>
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Calculator 🚀</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+          crossorigin="anonymous">
+      <link rel="stylesheet" href="style.css">
+      
+  <body>
+    <div class="container">
+        <div class="row justify-content-center h-100 align-items-center">
+            <div class="calculator col-md-6 shadow-lg p-3 mb-5 bg-body rounded" style="width: 600px; height:350px">
+                <h1 class="text-center" >Javascript Calculator</h1>
+                <table class="table" >
+                    <tr>
+                       <td colspan="3">
+                        <input id="text_area" class="w-100 p-2 shadow" type="text" placeholder="0.0" disabled />
+                       </td>
+                       <td >
+                        <input type="button" class="btn btn-danger" onclick="clearScreen()" value="CLEAR" />
+                       </td> 
+                    </tr>
+                    <tr>
+                      <td>
+                        <input type="button" class="shadow" onclick="display('1')" value="1" />
+                      </td>
+                      <td>
+                        <input type="button" class="shadow" onclick="display('2')" value="2" />
+                      </td>
+                      <td>
+                        <input type="button" class="shadow" onclick="display('3')" value="3" />
+                      </td>
+                      <td>
+                        <input type="button" class="shadow operators" onclick="display('/')" value="/" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input type="button" class="shadow" onclick="display('4')" value="4" />
+                      </td>
+                      <td>
+                        <input type="button" class="shadow" onclick="display('5')" value="5" />
+                      </td>
+                      <td>
+                        <input type="button" class="shadow" onclick="display('6')" value="6" />
+                      </td>
+                      <td>
+                        <input type="button" class="shadow operators" onclick="display('+')" value="+" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input type="button" class="shadow" onclick="display('7')" value="7" />
+                      </td>
+                      <td>
+                        <input type="button" class="shadow" onclick="display('8')" value="8" />
+                      </td>
+                      <td>
+                        <input type="button" class="shadow" onclick="display('9')" value="9" />
+                      </td>
+                      <td>
+                        <input type="button"class="shadow operators"  onclick="display('-')" value="-" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input type="button" class="shadow" onclick="display('.')" value="." />
+                      </td>
+                      <td  >
+                        <input type="button" class="shadow" onclick="display('0')" value="0" />
+                      </td>
+                      <td>
+                        <input type="button" class="shadow operators" onclick="display('*')" value="*" />
+                      </td>
+                      <td>
+                        <input type="button" class="btn btn-success" onclick="calculate()" value="=" />
+                      </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
+
+<script src="index.js"></script>
