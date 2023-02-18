@@ -13,15 +13,16 @@
   <body>
     <div class="container">
         <div class="row justify-content-center h-100 align-items-center">
-            <div class="calculator col-md-6 shadow-lg p-3 mb-5 bg-body rounded" style="width: 600px; height:350px">
-                <h1 class="text-center" >Javascript Calculator</h1>
-                <table class="table" >
+            <div class="calculator col-md-6 shadow-lg p-3 bg-body rounded" style="width: 600px; height:350px">
+                <h1 class="text-center mb-3" >Javascript Calculator</h1>
+                <center>
+                <table cellspacing="5px" cellpadding="5px" >
                     <tr>
                        <td colspan="3">
                         <input id="text_area" class="w-100 p-2 shadow" type="text" placeholder="0.0" disabled />
                        </td>
                        <td >
-                        <input type="button" class="btn btn-danger" onclick="clearScreen()" value="CLEAR" />
+                        <input type="button" class="btn btn-danger clear" onclick="clearScreen()" value="CLEAR" />
                        </td> 
                     </tr>
                     <tr>
@@ -81,6 +82,7 @@
                       </td>
                     </tr>
                 </table>
+                </center>
             </div>
         </div>
     </div>

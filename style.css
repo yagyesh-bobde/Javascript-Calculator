@@ -1,20 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&display=swap');
 
 body{
-          background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+          background-color: black;
           font-family: 'Crimson Text', serif !important;
 }
 
+h1 {
+    text-decoration: underline;
+    color: white;
+}
 .calculator{
-background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    backdrop-filter: blur(15px) saturate(89%) !important;
+    -webkit-backdrop-filter: blur(9px) saturate(173%) !important;
+    border-radius: 36px !important;
+    background: transparent !important;
+    box-shadow: inset 15px 15px 32px #3a3a3a,
+            inset -11px -11px 32px #594e4e !important;
+    height: fit-content !important;
 }
 
+input {
+    min-height: 50px;
+}
 input[type=text]{
     border: none;
     border-radius: 10px;
     padding: 10px 15px !important;
     transition: 356ms;
+    margin-bottom: 15px;
+    color: white;
+    font-size: x-large;
 }
+
+input[type=text]::placeholder { 
+    font-size: x-large;
+    color: rgba(255,255,255, 0.5);
+}
+
+.clear{
+    margin-bottom: 15px;
+}
+
 input[type=text]:active{
     border: none;
     transform: scale(1.2);
@@ -28,7 +54,7 @@ input[type=button]{
     transition: 256ms;
     font-weight: 600;
     font-family: 'Crimson Text', serif !important;
-    font-size: larger;
+    font-size: x-large;
 }
 
 input[type=button]:hover{
@@ -45,4 +71,10 @@ input[type=button]:active {
 
 .operators {
     background-color: #9395a5;
+}
+
+
+table{ 
+    width: 75%;
+    margin-bottom: 15px !important;
 }
